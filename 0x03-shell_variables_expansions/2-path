@@ -1,2 +1,2 @@
 #!/bin/bash
-alias N="cd $PATH \> mkdir action"
+alias N="mkdir $PATH/action"
