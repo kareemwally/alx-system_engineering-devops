@@ -1,0 +1,2 @@
+#!/bin/bash
+alias N="cd $PATH; mkdir action"
