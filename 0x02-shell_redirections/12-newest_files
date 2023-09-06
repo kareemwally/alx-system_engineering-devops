@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f  | ls -t | tr ' ': '\n'
+find . -type f  | ls -t | tr ' ': '\n'| head -n 10
