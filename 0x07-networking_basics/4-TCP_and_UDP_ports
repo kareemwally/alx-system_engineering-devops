@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
+#that bash script is to print listenning ports
 netstat -oa
