@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# a new key with bigger size
+#a new key with bigger size
 ssh-keygen -b 4096 -P betty -f school
 
