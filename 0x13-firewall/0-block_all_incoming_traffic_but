@@ -1,0 +1,22 @@
+#!/bin/bash
+sudo apt update
+
+# Install ufw
+sudo apt install ufw -y
+
+# Enable ufw
+sudo ufw enable
+
+# Allow SSH, HTTPS, and HTTP traffic
+sudo ufw allow ssh
+sudo ufw allow https
+sudo ufw allow http
+
+# Deny all other incoming traffic
+sudo ufw default deny incoming
+
+# Enable ufw
+sudo ufw --force enable
+
+# Display ufw status
+sudo ufw status
