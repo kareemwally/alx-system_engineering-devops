@@ -33,11 +33,12 @@ if __name__ == "__main__":
         to_do = req.json()
         for task in to_do:
             del task['id']
-            task["user_name"] = user_name
+            task["user_name"] = str(user_name)
         return to_do
 
     to_do = getting_titles()
 
     with open(filename, 'w') as csvfile:
-        writer = csv.DictWriter(csvfile, fieldnames=fields)
+        writer = csv.DictWriter(csvfile, fieldnames=fields,
+                                quoting=csv.QUOTE_ALL)
         writer.writerows(to_do)
