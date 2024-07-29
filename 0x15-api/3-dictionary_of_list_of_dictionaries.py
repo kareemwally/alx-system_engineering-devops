@@ -58,7 +58,6 @@ if __name__ == "__main__":
         data = format_data(users, tasks)
         filename = "todo_all_employees.json"
         save_to_json(filename, data)
-        print(f"Data for all users saved to {filename}")
 
     except requests.exceptions.RequestException as e:
         print(f"HTTP Request failed: {e}")
