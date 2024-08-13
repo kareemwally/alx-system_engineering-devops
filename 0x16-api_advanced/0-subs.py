@@ -22,6 +22,10 @@ headers['Authorization'] = f'bearer {token}'
 
 def number_of_subscribers(subreddit):
     """ a function to startsending requests to API"""
+    test = requests.get('https://oauth.reddit.com/r/{}/'
+                        .format(subreddit))
+    if subreddit is None or test.status_code is not "200":
+        return 0
     res = requests.get('https://oauth.reddit.com/r/{}/about'
                        .format(subreddit), headers=headers)
     return (res.json()["data"]["subscribers"])
