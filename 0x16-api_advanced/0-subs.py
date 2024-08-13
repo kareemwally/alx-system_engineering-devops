@@ -3,7 +3,6 @@
 a simple function to get number of subs of subreddit
 """
 import requests
-import sys
 
 client_id = "zg4h3mMKW60mJR1R7flA2Q"
 secret = "Svjdt2c-7UHBqZ-90I3XpKdvWfTcqA"
